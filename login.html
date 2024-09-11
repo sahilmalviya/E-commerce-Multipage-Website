@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping site Multi page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="img/logo1.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    section{
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #F5FCFF;
+    }
+    .content{
+   
+      width: 420px;
+      border: 2px solid rgb(255, 255, 255, 0.1);
+      box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
+      color: white;
+      border-radius: 10px;
+      padding: 30px 40px;
+    }
+    .content h1{
+      font-size: 36px;
+      text-align: center;
+      color: black;
+    }
+    .content .input-box{
+      position: relative;
+      width: 100%;
+      height: 50px;
+      margin: 30px 0px;
+    }
+
+    .input-box input{
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      border: 2px solid rgba(145, 139, 139, 0.2);
+      border-radius: 5px;
+      font-size: 16px;
+      padding: 20px 45px 20px 20px;
+     
+    }
+
+    .input-box input::placeholder{
+      color: black;
+    }
+    section .remember{
+      display: flex;
+      justify-content: space-between;
+      font-size: 14.5px;
+      margin: -15px 0px 15px;
+      color: black;
+    }
+    .remember label input{
+      color: black;
+      margin-right: 3px;
+    }
+    .remember a{
+      color: black;
+    }
+    .remember a:hover{
+      text-decoration: underline;
+    }
+    section .btn{
+      width: 100%;
+      height: 45px;
+      background-color:#fb774b;
+      color: black;
+      box-decoration-break: 0px 0px 10px rgb(0, 0, 0,0.1);
+      font-size: 16px;
+      font-weight: 500;
+      border: 2px solid rgba(145, 139, 139, 0.2);
+    }
+    section .register-link{
+      font-size: 14.5px;
+      text-align: center;
+      margin: 20px 0px 20px;
+    }
+    .register-link p{
+      color: black;
+    }
+    .register-link p a{
+      color: black;
+    
+    }
+
+    section .btn a{
+      color: black;
+    }
+    .butt{
+      width: 100%;
+      background-color:rgb(15, 15, 75);
+      color: white;
+      box-decoration-break: 0px 0px 10px rgb(0, 0, 0,0.1);
+      font-size: 16px;
+      font-weight: 500;
+      border: 2px solid rgba(145, 139, 139, 0.2);
+      
+
+    }
+    
+
+
+
+  </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+        <div class="container-fluid">
+          <img src="img/logo1.png" alt="" class="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i id="bar" class="bi bi-list"></i></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto font-weight-bold">
+    
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Contact Us</a>
+              </li>
+    
+              <li class="nav-item"> 
+                <i class="bi bi-search"></i>
+                <i class="bi bi-cart3"></i>   
+                <a href="login.html " class="active"><i class="bi bi-person"></i></a>
+              
+              </li>
+          </div>
+        </div>
+      </nav>
+
+      <section>
+          <div class="content">
+            <form action="#">
+              <h1>Login</h1>
+
+            <div class="input-box">
+              <input type="Email" placeholder="Enter Your Email" required>
+             
+            </div>
+            <div class="input-box">
+              <input type="password" placeholder="Enter Your Password" required>
+            </div>
+
+            <div class="remember">
+              <label><input type="checkbox">Remember Me</label>
+              <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="butt">Log in</button>
+
+
+            <div class="register-link">
+              <p>Don't have an account? <a href="#">Register Here</a></p>
+            </div>
+            
+            </form>
+            <button type="submit" class="btn"><i class="bi bi-google"></i><a href=""> Login With Google</a></button> <br> <br>
+            <button type="submit" class="btn"><i class="bi bi-facebook"></i><a href=""> Login With Facebook</a></button>
+          </div>
+        </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+      <footer class="mb-5 py-5">
+        <div class="row container mx-auto pt-5">
+          <div class="footer-one col-lg-3 col-md-6 col-12">
+            <img src="img/logo2.png" alt="">
+            <p class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio sapiente .</p>
+    
+          </div>
+          <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+            <h5 class="pb-2">Featured</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Boys</a></li>
+              <li><a href="#">Gilrs</a></li>
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Shoes</a></li>
+              <li><a href="#">Clothes</a></li>
+            </ul>
+          </div>
+          <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+            <h5 class="pb-2">Contact Us</h5>
+          <div>
+            <h6 class="text-uppercase">Address</h6>
+            <p>123 Street Name , Ahmedabad</p>
+          </div>
+          <div>
+            <h6 class="text-uppercase">Phone</h6>
+            <p>9327462210</p>
+          </div>
+          <div>
+            <h6 class="text-uppercase">Email</h6>
+            <p>sahilmalviya700@gmail.com</p>
+          </div>
+          </div>
+    
+          <div class="footer-one col-lg-3 col-md-6 col-12">
+            <h5 class="pb-2">Instagram</h5>
+            <div class="row">
+              <img class="img-fluid w-25 h-100 m-2" src="img/insta/1.jpg" alt="">
+              <img class="img-fluid w-25 h-100 m-2" src="img/insta/2.jpg" alt="">
+              <img class="img-fluid w-25 h-100 m-2" src="img/insta/3.jpg" alt="">
+              <img class="img-fluid w-25 h-100 m-2" src="img/insta/4.jpg" alt="">
+              <img class="img-fluid w-25 h-100 m-2" src="img/insta/5.jpg" alt="">
+            </div>
+         
+          </div>
+    
+        </div>
+        <div class="copyright mt-5">
+          <div class="row container mx-auto">
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+              <img src="img/payment.png" alt="">
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+          <p> Copyright © @2024. All  Right  Reserved.Designd By Sahil Malvi.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+           <a href="#"><i class="bi bi-facebook"></i></a>
+           <a href="#"><i class="bi bi-twitter"></i></a>
+           <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+          </div>
+        </div>
+    
+       </footer> 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
